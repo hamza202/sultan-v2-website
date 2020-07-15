@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.049" height="8.826" viewBox="0 0 14.049 8.826">
+  <g id="truck" transform="translate(-600.15 -1181.15)">
+    <path id="Path_903" data-name="Path 903" d="M603.983,1188.465h4.063v-6.385a.582.582,0,0,0-.58-.58H601.08a.582.582,0,0,0-.58.58v6.385h1.161" transform="translate(0 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.7"/>
+    <path id="Path_904" data-name="Path 904" d="M616.982,1186.822H613.5V1184.5h1.741C616.2,1184.5,616.982,1186.822,616.982,1186.822Z" transform="translate(-5.455 -1.259)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.7"/>
+    <path id="Path_905" data-name="Path 905" d="M618.143,1191.4H619.3v-1.741a1.164,1.164,0,0,0-1.161-1.161H613.5v2.9h2.322" transform="translate(-5.455 -2.937)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.7"/>
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="1" cy="1" r="1" transform="translate(610.85 1187.626)" stroke-width="0.7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle id="Ellipse_47" data-name="Ellipse 47" cx="1" cy="1" r="1" transform="translate(601.85 1187.626)" stroke-width="0.7" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
