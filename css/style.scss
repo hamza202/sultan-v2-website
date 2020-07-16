@@ -1,5 +1,7 @@
 @import "rtl/bootstrap.min.css";
 @import "all.min.css";
+@import "slick.css";
+@import "slick-theme.css";
 @import "scss/functions";
 @import "scss/variables";
 @import "scss/mixins/_breakpoints";
@@ -739,5 +741,35 @@ header {
   &:hover{
     color: $mainBlackColor;
     background-color: $whiteColor;
+  }
+}
+.slider-list-button{
+  margin: 0;
+  button{
+    background-color: transparent;
+    border: 1px solid $mainBlackColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    &:focus{
+      outline: none;
+    }
+    &:hover{
+      background-color: $mainBlackColor;
+      color: $whiteColor;
+    }
+  }
+}
+.slider-container{
+  //margin-left: -15px;
+  //margin-right: -15px;
+  .product-card{
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
