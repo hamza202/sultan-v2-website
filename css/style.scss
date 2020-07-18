@@ -49,12 +49,36 @@ $whiteColor: #fff;
   display: inline-block;
   transition: all ease-in-out 0.3s;
   border: 1px solid transparent;
+  cursor: pointer;
 
   &:hover {
     background-color: $mainBlackColor;
     color: $whiteColor;
     border-color: $yellowColor;
   }
+}
+%black-btn {
+  background-color: $mainBlackColor;
+  color: $whiteColor;
+  text-align: center;
+  font-weight: 700;
+  padding: 7px 40px;
+  display: inline-block;
+  transition: all ease-in-out 0.3s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+  &:hover {
+    background-color:  $yellowColor;
+    color: $mainBlackColor;
+    border-color: $yellowColor;
+  }
+}
+.black-btn{
+  @extend %black-btn
 }
 
 %ellipsis {
@@ -771,5 +795,134 @@ header {
   .product-card{
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+.discounts-container{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  .discounts-box{
+    background-color: rgba($blackColor , 0.85);
+    padding: 30px 80px;
+    display: inline-block;
+    text-align: center;
+    @include media-breakpoint-down(md){
+      padding: 10px 30px;
+    }
+    a{
+      margin-top: 30px;
+      @include media-breakpoint-down(md){
+        margin-top: 0;
+        font-size: 15px;
+        padding: 5px 15px;
+      }
+    }
+    h3{
+      color: $whiteColor;
+      font-weight: 700;
+      font-size: 30px;
+      @include media-breakpoint-down(md){
+        font-size: 18px;
+      }
+      span{
+        font-size: 65px;
+        position: relative;
+        top: 9px;
+        padding-right: 8px;
+        @include media-breakpoint-down(md){
+          font-size: 27px;
+          position: relative;
+          top: 5px;
+          padding-right: 8px;
+        }
+      }
+      }
+    }
+  }
+.footer{
+  .top-footer{
+    background-color: #181818;
+    padding: 50px 0 35px 0;
+    h3{
+      color: #D5D5D5;
+      font-size: 17px;
+      font-weight: 700;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #707070;
+    }
+    .newsletter-container{
+      .black-btn{
+        height: 50px;
+        padding: 10px 10px;
+        font-size: 15px;
+      }
+      input{
+        height: 50px;
+        border-radius: 0 !important;
+        border: 0;
+        background-color: #3c3c3c;
+        font-size: 13px;
+        color: white;
+        &:focus{
+          box-shadow: none;
+          outline: none;
+        }
+      }
+    }
+  }
+
+}
+.footer-list{
+  margin-bottom: 0;
+  li{
+    width: 50%;
+    float: right;
+    margin-bottom: 15px;
+    a{
+      color: #D5D5D5;
+      font-size: 14px;
+      font-weight: 700;
+      &:hover{
+        color: $yellowColor;
+      }
+    }
+  }
+}
+.mb-10px{
+  margin-bottom: 10px;
+}
+.bottom-footer{
+  border-top: 1px solid #707070;
+  padding: 20px 0;
+  background-color: $blackColor;
+  p.copy-right-text{
+    margin: 0;
+    color: #808080;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .footer-social{
+    margin-bottom: 0;
+    a{
+      color: #808080;
+      padding: 0 10px;
+      font-size: 20px;
+      &:hover{
+        color: $yellowColor;
+      }
+    }
+  }
+}
+.footer-link{
+  margin: 0;
+  a{
+    color: #d5d5d5;
+    font-size: 15px;
+    &:hover{
+      color: $yellowColor;
+    }
   }
 }
