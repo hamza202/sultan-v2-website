@@ -82,3 +82,8 @@ if($('.slider').length){
     });
 }
 
+$('.add-fav-btn').on('click', function (e) {
+    $(this).toggleClass('active');
+    e.stopPropagation();
+    e.preventDefault();
+});
