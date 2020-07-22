@@ -67,6 +67,10 @@ $whiteColor: #fff;
   transition: all ease-in-out 0.3s;
   border: 1px solid transparent;
   cursor: pointer;
+  @include media-breakpoint-down(md){
+    padding: 5px 5px;
+    font-size: 14px;
+  }
   &:focus{
     outline: none;
     box-shadow: none;
@@ -80,7 +84,16 @@ $whiteColor: #fff;
 .black-btn{
   @extend %black-btn
 }
+.outline-gray{
+  @extend %black-btn;
+  background-color: transparent;
+  color: $mainBlackColor;
+  border-color: #D5D5D5;
+  &:hover{
+    border-color: $mainBlackColor;
+  }
 
+}
 %ellipsis {
   white-space: nowrap;
   overflow: hidden;
@@ -1091,4 +1104,199 @@ header {
   &:focus{
     outline: none;
   }
+}
+.featured-top-section{
+  position: relative;
+  z-index: 1;
+  img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+.special-products-card{
+  margin-bottom: 30px;
+  img{
+    width: 100%;
+    height: 285px;
+    object-fit: cover;
+  }
+  a{
+    font-weight: 700;
+    font-size: 20px;
+    color: $blackColor;
+    @extend %ellipsis;
+    display: block;
+    margin: 10px 0;
+    &:hover{
+      color: $yellowColor;
+    }
+  }
+  p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+.special-products-section{
+  @include media-breakpoint-up(lg){
+    margin-top: -200px;
+  }
+  position: relative;
+  z-index: 2;
+}
+.login-register-container{
+  border: 1px solid #D5D5D5;
+  padding: 50px;
+  @include media-breakpoint-down(md){
+    padding: 30px;
+  }
+  h3{
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 26px;
+  }
+}
+.my-form{
+  label{
+    font-weight: 700;
+    color: #9D9D9D;
+    font-size: 15px;
+  }
+  .form-control{
+    background-color: #EFEFEF;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    height: 45px;
+    color: $blueColor !important;
+    font-weight: 700;
+    transition: all ease-in-out 0.3s;
+    &:focus{
+      box-shadow: none;
+      border-color: $blueColor;
+      background-color: #fff !important;
+    }
+    &::placeholder{
+      font-weight: 400;
+      font-size: 15px;
+      padding: 5px 0;
+    }
+  }
+  .phone-container{
+    position: relative;
+    input{
+      padding-right: 70px;
+    }
+    span.number-introduction{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right:  .75rem;
+      color: #515151;
+      font-weight: 700;
+      direction: ltr;
+      &:before{
+        position: absolute;
+        content: '';
+        left:-13px;
+        display: block;
+        width: 1px;
+        height: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #515151;
+      }
+    }
+  }
+  .address-input{
+    position: relative;
+    input{
+      background-color: #DDE9FA;
+      padding-left: 37px;
+    }
+    button.del-address{
+      position: absolute;
+      border: 0;
+      background-color: transparent;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #B0B0B0;
+      cursor: pointer;
+      transition: all ease-in-out 0.3s;
+      outline: none;
+      &:focus, &:active{
+        outline: none;
+      }
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.my-select{
+  position: relative;
+  select.form-control{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #7a7a7a !important;
+    font-weight: 400;
+    &.changed{
+      color: $blueColor !important;
+      font-weight: 700;
+    }
+  }
+  i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font-size: 18px;
+  }
+}
+a.add-new-address{
+  position: relative;
+  display: inline-block;
+  padding-right: 29px;
+  color: #646464;
+  font-weight: 700;
+  font-size: 16px;
+  &:hover{
+    color: $blueColor;
+
+  }
+  i{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $blueColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $whiteColor;
+    height: 22px;
+    font-size: 15px;
+    width: 22px;
+  }
+}
+.gray-link{
+  color: #9D9D9D;
+  &:hover{
+    color: $blueColor;
+  }
+}
+.forget-password{
+  font-size: 15px;
 }

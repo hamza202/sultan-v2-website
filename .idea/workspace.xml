@@ -6,8 +6,8 @@
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/product-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,9 @@
       <workItem from="1594850799068" duration="4724000" />
       <workItem from="1595017518481" duration="4189000" />
       <workItem from="1595040169013" duration="4844000" />
-      <workItem from="1595102620310" duration="7966000" />
+      <workItem from="1595102620310" duration="8234000" />
+      <workItem from="1595341069814" duration="9500000" />
+      <workItem from="1595447590546" duration="6191000" />
     </task>
     <servers />
   </component>
@@ -68,10 +70,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="256" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1594855078587" />
-    <state x="404" y="269" key="run.anything.popup" timestamp="1594414958532">
+    <state x="404" y="269" key="run.anything.popup" timestamp="1595457482004">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="269" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1594414958532" />
+    <state x="404" y="269" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1595457482004" />
     <state x="1989" y="51" key="search.everywhere.popup" timestamp="1594809566016">
       <screen x="1366" y="-174" width="1920" height="1040" />
     </state>

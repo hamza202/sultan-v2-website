@@ -13,7 +13,7 @@ $('.fave-button').on('click', function (e) {
 $('.product-cart-button').on('click', function (e) {
     e.preventDefault();
 });
-if($('#slick1').length) {
+if ($('#slick1').length) {
     $('#slick1').slick({
         infinite: true,
         slidesToShow: 4,
@@ -42,7 +42,7 @@ if($('#slick1').length) {
     });
 }
 
-if($('#slick2').length) {
+if ($('#slick2').length) {
     $('#slick2').slick({
         infinite: true,
         slidesToShow: 4,
@@ -70,7 +70,7 @@ if($('#slick2').length) {
     });
 }
 
-if($('.slider').length){
+if ($('.slider').length) {
     $('.prev-button').click(function (e) {
         e.preventDefault();
         $(this).closest('.sliders').find('.slider-container').slick('slickNext');
@@ -87,3 +87,30 @@ $('.add-fav-btn').on('click', function (e) {
     e.stopPropagation();
     e.preventDefault();
 });
+
+$('.my-select select').on('change', function () {
+    $(this).addClass("changed")
+});
+
+
+//Repeater
+$('.add-new-address').on('click', function () {
+    $('.address-repeater')
+        .append($(
+            '<div class="form-group address-input">\n' +
+            '<input type="text" class="form-control"  placeholder="أضف عنوان شحن">\n' +
+            '<button class="del-address">\n' +
+            '    <i class="fal fa-trash-alt"></i>\n' +
+            '</button>\n' +
+            '</div>'
+            ).hide().fadeIn(500)
+        )
+    ;
+});
+$('.address-repeater').on('click', '.del-address', function (e) {
+    $(this).closest('.address-input').fadeOut(300, function () {
+        $(this).remove()
+    });
+    e.preventDefault()
+});
+
